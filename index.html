@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>odem</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- bootstrap 3.0.2 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/css/intlTelInput.css" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" />
+    <link rel="stylesheet" href="css/steps.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="skin-black">
+    <header class="header">
+        <a href="index.html" class="logo">
+            <!--
+          Add the class icon to your logo image or logo icon to add the margining
+        -->
+            <img src="img/logo.jpg" />
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button -->
+            <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-chevron-up"></i>
+            </a>
+            <div class="navbar-left">
+                <div id="nav-page">
+                    <ul>
+                        <li class="active"><a href="#">Browse Other Course</a></li>
+                        <li><a href="#">View Educators</a></li>
+                        <li><a href="#">Refer a Friend</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQS <i class="caret"></i
+                ></a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li><a href="#">Faq1</a></li>
+                                <li><a href="#">Faq2</a></li>
+                                <li><a href="#">Faq3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <i class="caret"></i
+                ></a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li><a href="#">Accout 1</a></li>
+                                <li><a href="#">Accout 2</a></li>
+                                <li><a href="#">Accout 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-left mobile">
+                <i class="fa fa-ellipsis-v" data-toggle="collapse" data-target="#nav-pages"></i>
+                <div id="nav-pages" class="collapse">
+                    <ul>
+                        <li class="active"><a href="#">Browse Course</a></li>
+                        <li><a href="#">View Educators</a></li>
+                        <li><a href="#">Refer a Friend</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQS <i class="caret"></i
+                ></a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li><a>Faq1</a></li>
+                                <li><a>Faq2</a></li>
+                                <li><a>Faq3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <i class="caret"></i
+                ></a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li><a>Accout 1</a></li>
+                                <li><a>Accout 2</a></li>
+                                <li><a>Accout 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <!--
+              <li class="dropdown messages-menu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-envelope"></i>
+                      <span class="label label-success">4</span>
+                  </a>
+                  <ul class="dropdown-menu">
+
+              <li class="dropdown notifications-menu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-warning"></i>
+                      <span class="label label-warning">10</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have 10 notifications</li>
+                      <li>
+                          <ul class="menu">
+                              <li>
+                                  <a href="#">
+                                      <i class="ion ion-ios7-people info"></i> 5 new members joined today
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <i class="fa fa-warning danger"></i> Very long description here that may not fit into the page and may cause design problems
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <i class="fa fa-users warning"></i> 5 new members joined
+                                  </a>
+                              </li>
+
+                              <li>
+                                  <a href="#">
+                                      <i class="ion ion-ios7-cart success"></i> 25 sales made
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <i class="ion ion-ios7-person danger"></i> You changed your username
+                                  </a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="footer"><a href="#">View all</a></li>
+                  </ul>
+              </li>
+            -->
+                    <!--
+              <li class="dropdown tasks-menu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-tasks"></i>
+                      <span class="label label-danger">9</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have 9 tasks</li>
+                      <li>
+                          <ul class="menu">
+                              <li>
+                                  <a href="#">
+                                      <h3>
+                                          Design some buttons
+                                          <small class="pull-right">20%</small>
+                                      </h3>
+                                      <div class="progress xs">
+                                          <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                              <span class="sr-only">20% Complete</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <h3>
+                                          Create a nice theme
+                                          <small class="pull-right">40%</small>
+                                      </h3>
+                                      <div class="progress xs">
+                                          <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                              <span class="sr-only">40% Complete</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <h3>
+                                          Some task I need to do
+                                          <small class="pull-right">60%</small>
+                                      </h3>
+                                      <div class="progress xs">
+                                          <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                              <span class="sr-only">60% Complete</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <h3>
+                                          Make beautiful transitions
+                                          <small class="pull-right">80%</small>
+                                      </h3>
+                                      <div class="progress xs">
+                                          <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                              <span class="sr-only">80% Complete</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="footer">
+                          <a href="#">View all tasks</a>
+                      </li>
+                  </ul>
+              </li>
+            -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <input accept="image/*" type="file" class="hidden">
+                            <img class="cursor-pointer img-center" height="50" title="Upload Image" src="https://api.dev.odem.cloud/api/User/GetUserProfileImage/416"> <span>Hello</span>
+                            <span class="profile-name">My Name<i class="caret"></i></span>
+                        </a>
+                        <ul class="dropdown-menu user-list">
+                            <li><a href="#">Change Passwords</a></li>
+
+                            <li></li>
+                            <li><a href="#">Change Username</a></li>
+                            <li><a href="#">My Profile</a></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="left-side sidebar-offcanvas">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="fa fa-user"></i> <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-laptop"></i> <span>My Program</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="my programs.html"><i class="fa fa-angle-double-right"></i>Create Program</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-globe"></i> <span>ITE</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right"></i>ITE2</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right"></i>ITE3</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-double-right"></i>ITE4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-play"></i> <span>Active Program</span>
+                            <small class="badge pull-right">(0)</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-check"></i> <span>Completed Programs</span>
+                            <small class="badge pull-right">(0)</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-reply"></i> <span>Scheduled Programs</span>
+                            <small class="badge pull-right">(0)</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-folder"></i> <span>Program Catalogue</span>
+                            <small class="badge pull-right">(39)</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar"></i> <span>My Caleder</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-envelope"></i> <span>Message Center</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-certificate"></i> <span>My Reward</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-credit-card"></i> <span>My Payment</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Right side column. Contains the navbar and content of the page -->
+        <aside class="right-side">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="left-header">
+                    <h2><i class="fa fa-home"></i></h2>
+                    <h2><i class="fa fa-user"></i></h2>
+                </div>
+                <h2>
+                    ODEM<i class="fa fa-caret-right"></i>
+                    <h2>Dashboard <i class="fa fa-caret-right"></i></h2>
+                    <h2>My Profile</h2>
+                </h2>
+                <!-- <ol class="breadcrumb">
+            <li>
+              <a href="#"><i class="fa fa-dashboard"></i> Home</a>
+            </li>
+            <li class="active">Dashboard</li>
+          </ol> -->
+            </section>
+            <!-- content body -->
+            <section class="content">
+                <!-- Multi step form -->
+                <section class="multi_step_form">
+                    <form id="msform">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active">
+                                <a href="#" class="num">1</a><span>Contatct Info</span>
+                            </li>
+                            <li>
+                                <a href="#" class="num">2</a
+                  ><span class="scnd-step">Student Detail</span>
+                </li>
+                <li>
+                  <a href="#" class="num">3</a
+                  ><span class="thrd-step">Wallet</span>
+                </li>
+              </ul>
+              <!-- fieldsets -->
+              <fieldset>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label>Fisrt Name</label>
+                    <input type="text" id="first-name" class="form-control"/>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Middle</label>
+                    <input type="text" id="middle" class="form-control"/>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Fisrt Name</label>
+                    <input type="text" id="last" class="form-control"/>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>User Name</label>
+                    <input type="text" id="user" class="form-control"/>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Password</label>
+                    <input type="password" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input type="email" id="mail" class="form-control"/>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Alternat Email</label>
+                    <input type="email" class="form-control"/>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>Country Code</label>
+                    <select class="product_select">
+                      <option data-display="00">00</option>
+                      <option>02</option>
+                      <option>03</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Mobile Phone</label>
+                    <input type="umber" class="form-control"/>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Country Code</label>
+                    <select class="product_select">
+                      <option data-display="00">00</option>
+                      <option>01</option>
+                      <option>02</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Alternat Phone</label>
+                    <input type="email" class="form-control" />
+                  </div>
+                  <br>
+                </div>
+                <br>
+                <br>
+                <div class="form-row">
+                 <div class="mail">
+                 <h2>Mailing Address</h2></div>   
+                  <div class="mail-form">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Street Address</label>
+                       <input type="text" class="form-control"/>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>Street Address2</label>
+                       <input type="text" class="form-control"/>
+
+                      </div>
+                    </div>
+                    <div class="form-row">
+                            <div class="form-group col-md-4">
+                                       <label>City</label>
+                                      <input type="text" class="form-control"/>
+                            </div>
+                            <div class="form-group col-md-4">
+                                    <label>State/Region</label>
+                                   <input type="text" class="form-control"/>
+                         </div>
+                         <div class="form-group col-md-4">
+                                <label>Postal Code</label>
+                               <input type="text" class="form-control"/>
+                     </div>
+                      
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                            <label>Country</label>
+                                            <select class="product_select">
+                                              <option data-display="Poland">Poland</option>
+                                              <option>America</option>
+                                              <option>China</option>
+                                              <option>Egypt</option>
+                                            </select>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                
+                <button type="button" class="action-button previous_button">
+                  Cancel
+                </button>
+                <button type="button" class="next action-button">Next</button>
+              </fieldset>
+              <fieldset>
+                <h3>Verify Your Identity</h3>
+                <h6>
+                  Please upload any of these documents to verify your Identity.
+                </h6>
+                <div class="passport">
+                  <h4>Govt. ID card <br />PassPort <br />Driving License.</h4>
+                  <a href="#" class="don_icon"
+                    ><i class="ion-android-done"></i
+                  ></a>
+    </div>
+    <div class="input-group">
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="upload" />
+            <label class="custom-file-label" for="upload"><i class="ion-android-cloud-outline"></i>Choose
+                      file</label
+                    >
+                  </div>
+                </div>
+                <ul class="file_added">
+                  <li>File Added:</li>
+                  <li>
+                    <a href="#"
+                      ><i class="ion-paperclip"></i>national_id_card.png</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="ion-paperclip"></i>national_id_card_back.png</a
+                    >
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="action-button previous previous_button"
+                >
+                  Back
+                </button>
+                <button type="button" class="next action-button">
+                  Continue
+                </button>
+              </fieldset>
+              <fieldset>
+                <h3>Create Security Questions</h3>
+                <h6>Please update your account with security questions</h6>
+                <div class="form-group">
+                  <select class="product_select">
+                    <option data-display="1. Choose A Question"
+                      >1. Choose A Question</option
+                    >
+                    <option>2. Choose A Question</option>
+                    <option>3. Choose A Question</option>
+                  </select>
+                </div>
+                <div class="form-group fg_2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Anwser here:"
+                  />
+                </div>
+                <div class="form-group">
+                  <select class="product_select">
+                    <option data-display="1. Choose A Question"
+                      >1. Choose A Question</option
+                    >
+                    <option>2. Choose A Question</option>
+                    <option>3. Choose A Question</option>
+                  </select>
+                </div>
+                <div class="form-group fg_3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Anwser here:"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="action-button previous previous_button"
+                >
+                  Back
+                </button>
+                <a href="#" class="action-button">Finish</a>
+              </fieldset>
+            </form>
+          </section>
+          <!-- End Multi step form -->
+        </section>
+      </aside>
+      <!-- /.right-side -->
+    </div>
+    <!-- ./wrapper -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/js/intlTelInput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>
